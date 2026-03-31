@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import FilterSidebar from "@/components/FilterSidebar";
 import ExamCard from "@/components/ExamCard";
+import FeaturedCertifications from "@/components/FeaturedCertifications";
 import StatsBanner from "@/components/StatsBanner";
 import Footer from "@/components/Footer";
+import ChatBox from "@/components/ChatBox";
 import { Exam, IndustryCategory, ExamType } from "@/types";
 import examsData from "../../data/exams.json";
 
@@ -21,6 +23,15 @@ export default function Home() {
     new Set()
   );
   const [sortAlpha, setSortAlpha] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const ITEMS_PER_PAGE = 12;
+
+  // Pick 3 random exams once on mount; must be client-only to avoid hydration mismatch
+  const [featuredExams, setFeaturedExams] = useState<Exam[]>([]);
+  useEffect(() => {
+    const shuffled = [...exams].sort(() => Math.random() - 0.5);
+    setFeaturedExams(shuffled.slice(0, 3));
+  }, []);
 
   const filteredExams = useMemo(() => {
     let result = exams;
@@ -51,6 +62,17 @@ export default function Home() {
 
     return result;
   }, [searchQuery, selectedIndustries, selectedExamTypes, sortAlpha]);
+
+  // Reset to page 1 whenever filters or search change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filteredExams]);
+
+  const totalPages = Math.ceil(filteredExams.length / ITEMS_PER_PAGE);
+  const paginatedExams = filteredExams.slice(
+    (currentPage - 1) * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
+  );
 
   const handleIndustryToggle = (industry: IndustryCategory) => {
     setSelectedIndustries((prev) => {
@@ -87,6 +109,8 @@ export default function Home() {
 
       <main id="programs" className="flex-1">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+          <FeaturedCertifications exams={featuredExams} />
+
           <div className="flex flex-col lg:flex-row gap-8">
             <FilterSidebar
               selectedIndustries={selectedIndustries}
@@ -109,12 +133,67 @@ export default function Home() {
                   </p>
                 </div>
               ) : (
+                <>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-                  {filteredExams.map((exam) => (
+                  {paginatedExams.map((exam) => (
                     <ExamCard key={exam.code} exam={exam} />
                   ))}
                 </div>
-              )}
+
+                {/* Pagination controls */}
+                {totalPages > 1 && (
+                  <div className="flex items-center justify-center gap-2 mt-8">
+                    <button
+                      onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                      disabled={currentPage === 1}
+                      className="px-3 py-2 text-sm font-body rounded-md border border-gray-200 text-navy disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+                    >
+                      Previous
+                    </button>
+
+                    {Array.from({ length: totalPages }, (_, i) => i + 1)
+                      .filter(
+                        (page) =>
+                          page === 1 ||
+                          page === totalPages ||
+                          Math.abs(page - currentPage) <= 1
+                      )
+                      .reduce<(number | "...")[]>((acc, page, idx, arr) => {
+                        if (idx > 0 && (page as number) - (arr[idx - 1] as number) > 1) {
+                          acc.push("...");
+                        }
+                        acc.push(page);
+                        return acc;
+                      }, [])
+                      .map((item, idx) =>
+                        item === "..." ? (
+                          <span key={`ellipsis-${idx}`} className="px-2 text-gray-400 font-body text-sm">
+                            …
+                          </span>
+                        ) : (
+                          <button
+                            key={item}
+                            onClick={() => setCurrentPage(item as number)}
+                            className={`w-9 h-9 text-sm font-body rounded-md border transition-colors ${
+                              currentPage === item
+                                ? "bg-mint text-white border-mint"
+                                : "border-gray-200 text-navy hover:bg-gray-50"
+                            }`}
+                          >
+                            {item}
+                          </button>
+                        )
+                      )}
+
+                    <button
+                      onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                      disabled={currentPage === totalPages}
+                      className="px-3 py-2 text-sm font-body rounded-md border border-gray-200 text-navy disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
+                    >
+                      Next
+                    </button>
+                  </div>
+                )}                </>              )}
             </div>
           </div>
         </div>
@@ -122,6 +201,7 @@ export default function Home() {
 
       <StatsBanner />
       <Footer />
+      <ChatBox />
     </div>
   );
 }
