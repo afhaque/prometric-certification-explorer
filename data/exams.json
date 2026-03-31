@@ -1,0 +1,1178 @@
+[
+  {
+    "code": "ase",
+    "name": "ASE Automotive Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Professional certification for automotive service technicians covering engine repair, electronics, and diagnostics.",
+    "link": "https://www.prometric.com/ga/exams/ase"
+  },
+  {
+    "code": "asis",
+    "name": "ASIS International Security Certifications",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Professional certifications in security management including CPP, PSP, and PCI credentials for security professionals.",
+    "link": "https://www.prometric.com/ga/exams/asis"
+  },
+  {
+    "code": "acehp",
+    "name": "Accreditation Council for Education in Health Professions",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for continuing education professionals in healthcare covering program design and assessment.",
+    "link": "https://www.prometric.com/ga/exams/acehp"
+  },
+  {
+    "code": "alibaba",
+    "name": "Alibaba Cloud Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Cloud computing certifications for Alibaba Cloud services covering architecture, operations, and big data.",
+    "link": "https://www.prometric.com/ga/exams/alibaba"
+  },
+  {
+    "code": "aws",
+    "name": "Amazon Web Services (AWS) Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Cloud computing certifications validating expertise in AWS architecture, development, operations, and specialty areas.",
+    "link": "https://www.prometric.com/ga/exams/aws"
+  },
+  {
+    "code": "aacn",
+    "name": "American Association of Critical-Care Nurses (AACN)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for critical care nurses covering acute and progressive care nursing competencies.",
+    "link": "https://www.prometric.com/ga/exams/aacn"
+  },
+  {
+    "code": "abfm",
+    "name": "American Board of Family Medicine (ABFM)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Board certification exam for family medicine physicians, assessing clinical knowledge and patient care competency.",
+    "link": "https://www.prometric.com/ga/exams/abfm"
+  },
+  {
+    "code": "abgc",
+    "name": "American Board of Genetic Counseling (ABGC)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Board certification for genetic counselors covering genetics, genomics, and counseling skills.",
+    "link": "https://www.prometric.com/ga/exams/abgc"
+  },
+  {
+    "code": "abns",
+    "name": "American Board of Neurological Surgery (ABNS)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Board certification for neurosurgeons, assessing knowledge of neurological surgical procedures and patient care.",
+    "link": "https://www.prometric.com/ga/exams/abns"
+  },
+  {
+    "code": "abnm",
+    "name": "American Board of Nuclear Medicine (ABNM)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification exam for nuclear medicine physicians covering diagnostic imaging and radioactive treatment procedures.",
+    "link": "https://www.prometric.com/ga/exams/abnm"
+  },
+  {
+    "code": "abob",
+    "name": "American Board of Obstetrics (ABOB)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for obstetrics and gynecology specialists covering reproductive health, surgery, and patient care.",
+    "link": "https://www.prometric.com/ga/exams/abob"
+  },
+  {
+    "code": "abp",
+    "name": "American Board of Pediatrics (ABP)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Board certification for pediatricians covering child and adolescent healthcare, development, and disease management.",
+    "link": "https://www.prometric.com/ga/exams/abp"
+  },
+  {
+    "code": "abps",
+    "name": "American Board of Plastic Surgery (ABPS)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Board certification for plastic surgeons covering reconstructive and cosmetic surgical procedures.",
+    "link": "https://www.prometric.com/ga/exams/abps"
+  },
+  {
+    "code": "abss",
+    "name": "American Board of Surgery (ABS)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for general surgeons assessing knowledge of surgical principles, procedures, and patient management.",
+    "link": "https://www.prometric.com/ga/exams/abss"
+  },
+  {
+    "code": "ada",
+    "name": "American Dental Association (ADA)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Dental licensing examinations assessing clinical knowledge and skills for dental practice.",
+    "link": "https://www.prometric.com/ga/exams/ada"
+  },
+  {
+    "code": "aha",
+    "name": "American Hospital Association (AHA)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Healthcare leadership certifications covering hospital administration, patient safety, and quality improvement.",
+    "link": "https://www.prometric.com/ga/exams/aha"
+  },
+  {
+    "code": "aicp",
+    "name": "American Institute of Certified Planners (AICP)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Professional certification for urban and regional planners covering planning law, ethics, and practice.",
+    "link": "https://www.prometric.com/ga/exams/aicp"
+  },
+  {
+    "code": "aiscb",
+    "name": "American Institute of Steel Construction (AISC)",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Certification for structural steel professionals covering design, fabrication, and erection standards.",
+    "link": "https://www.prometric.com/ga/exams/aiscb"
+  },
+  {
+    "code": "amwa",
+    "name": "American Medical Writers Association (AMWA)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Medical writing certification covering regulatory documents, scientific publications, and health communications.",
+    "link": "https://www.prometric.com/ga/exams/amwa"
+  },
+  {
+    "code": "ancc",
+    "name": "American Nurses Credentialing Center (ANCC)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Professional nursing certification exams for advanced practice nurses, covering specialty nursing knowledge and clinical skills.",
+    "link": "https://www.prometric.com/ga/exams/ancc"
+  },
+  {
+    "code": "api",
+    "name": "American Petroleum Institute (API)",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Professional certifications in petroleum engineering covering inspection, safety, and equipment standards.",
+    "link": "https://www.prometric.com/ga/exams/api"
+  },
+  {
+    "code": "arc",
+    "name": "American Red Cross (ARC) Certifications",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Healthcare and safety certifications including CPR, first aid, lifeguarding, and water safety.",
+    "link": "https://www.prometric.com/ga/exams/arc"
+  },
+  {
+    "code": "asq",
+    "name": "American Society for Quality (ASQ)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Professional quality certifications including Six Sigma, quality engineer, auditor, and manager credentials.",
+    "link": "https://www.prometric.com/ga/exams/asq"
+  },
+  {
+    "code": "asme",
+    "name": "American Society of Mechanical Engineers (ASME)",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Professional engineering examinations covering mechanical engineering principles, design, manufacturing, and safety standards.",
+    "link": "https://www.prometric.com/ga/exams/asme"
+  },
+  {
+    "code": "asha",
+    "name": "American Speech-Language-Hearing Association (ASHA)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification exams for speech-language pathologists and audiologists covering clinical competencies.",
+    "link": "https://www.prometric.com/ga/exams/asha"
+  },
+  {
+    "code": "avma",
+    "name": "American Veterinary Medical Association (AVMA)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Veterinary licensing examination assessing competency in veterinary medicine and animal healthcare.",
+    "link": "https://www.prometric.com/ga/exams/avma"
+  },
+  {
+    "code": "awi",
+    "name": "Architectural Woodwork Institute (AWI)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Quality certification for architectural woodwork covering design, manufacturing, and installation standards.",
+    "link": "https://www.prometric.com/ga/exams/awi"
+  },
+  {
+    "code": "acfe",
+    "name": "Association of Certified Fraud Examiners (ACFE)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Certified Fraud Examiner exam covering fraud prevention, detection, and investigation methodologies.",
+    "link": "https://www.prometric.com/ga/exams/acfe"
+  },
+  {
+    "code": "autodesk",
+    "name": "Autodesk Certified Professional",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Professional certification for Autodesk software including AutoCAD, Revit, Inventor, and other design tools.",
+    "link": "https://www.prometric.com/ga/exams/autodesk"
+  },
+  {
+    "code": "bps",
+    "name": "Board of Pharmacy Specialties (BPS)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Specialty pharmacy certifications covering ambulatory care, critical care, oncology, and nuclear pharmacy.",
+    "link": "https://www.prometric.com/ga/exams/bps"
+  },
+  {
+    "code": "cfa-cipm",
+    "name": "CFA Institute CIPM Program",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Certificate in Investment Performance Measurement, covering performance evaluation, attribution, and GIPS standards.",
+    "link": "https://www.prometric.com/ga/exams/cfa-cipm"
+  },
+  {
+    "code": "cfa",
+    "name": "CFA Institute Chartered Financial Analyst (CFA)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "A globally recognized credential for investment management professionals, covering ethics, economics, portfolio management, and financial analysis.",
+    "link": "https://www.prometric.com/ga/exams/cfa"
+  },
+  {
+    "code": "cfa-esg",
+    "name": "CFA Institute ESG Investing",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Certificate in ESG Investing covering environmental, social, and governance factors in investment analysis.",
+    "link": "https://www.prometric.com/ga/exams/cfa-esg"
+  },
+  {
+    "code": "cael",
+    "name": "Canadian Academic English Language (CAEL)",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "English language proficiency test for academic purposes, accepted by Canadian universities and colleges.",
+    "link": "https://www.prometric.com/ga/exams/cael"
+  },
+  {
+    "code": "cda-adc",
+    "name": "Canadian Dental Association (CDA)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "National dental examination for licensure in Canada, assessing clinical and diagnostic competencies.",
+    "link": "https://www.prometric.com/ga/exams/cda-adc"
+  },
+  {
+    "code": "celban",
+    "name": "Canadian English Language Benchmark Assessment for Nurses (CELBAN)",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "English language assessment for internationally educated nurses seeking to practice in Canada.",
+    "link": "https://www.prometric.com/ga/exams/celban"
+  },
+  {
+    "code": "ciro",
+    "name": "Canadian Investment Regulatory Organization (CIRO)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Securities licensing examinations for investment advisors and dealers in Canada.",
+    "link": "https://www.prometric.com/ga/exams/ciro"
+  },
+  {
+    "code": "csmls",
+    "name": "Canadian Society for Medical Laboratory Science (CSMLS)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for medical laboratory technologists and assistants in Canada.",
+    "link": "https://www.prometric.com/ga/exams/csmls"
+  },
+  {
+    "code": "canon",
+    "name": "Canon Technical Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Professional certification for Canon imaging and printing technology covering installation and maintenance.",
+    "link": "https://www.prometric.com/ga/exams/canon"
+  },
+  {
+    "code": "cbic",
+    "name": "Certification Board of Infection Control (CBIC)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for infection prevention and control professionals in healthcare settings.",
+    "link": "https://www.prometric.com/ga/exams/cbic"
+  },
+  {
+    "code": "cchi",
+    "name": "Certification Commission for Healthcare Interpreters (CCHI)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for healthcare interpreters covering medical terminology, ethics, and interpreting techniques.",
+    "link": "https://www.prometric.com/ga/exams/cchi"
+  },
+  {
+    "code": "ccpdt",
+    "name": "Certification Council for Professional Dog Trainers (CCPDT)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Professional certification for dog trainers covering learning theory, behavior, and training methodologies.",
+    "link": "https://www.prometric.com/ga/exams/ccpdt"
+  },
+  {
+    "code": "ccxp",
+    "name": "Certified Customer Experience Professional (CCXP)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Professional certification in customer experience management covering strategy, metrics, and culture.",
+    "link": "https://www.prometric.com/ga/exams/ccxp"
+  },
+  {
+    "code": "cfp",
+    "name": "Certified Financial Planner (CFP)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "The CFP certification exam covers financial planning, risk management, investments, tax planning, retirement, and estate planning.",
+    "link": "https://www.prometric.com/ga/exams/cfp"
+  },
+  {
+    "code": "cfpc",
+    "name": "Certified Financial Planner Canada (CFPC)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Canadian financial planning certification covering investment, tax, insurance, retirement, and estate planning.",
+    "link": "https://www.prometric.com/ga/exams/cfpc"
+  },
+  {
+    "code": "cpa",
+    "name": "Certified Public Accountant (CPA)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "The CPA exam is the gold standard for accounting professionals, testing knowledge in auditing, business concepts, financial accounting, and regulation.",
+    "link": "https://www.prometric.com/ga/exams/cpa"
+  },
+  {
+    "code": "cwnp",
+    "name": "Certified Wireless Network Professional (CWNP)",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Wireless networking certifications covering wireless LAN administration, security, analysis, and design.",
+    "link": "https://www.prometric.com/ga/exams/cwnp"
+  },
+  {
+    "code": "caia",
+    "name": "Chartered Alternative Investment Analyst (CAIA)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Professional designation for alternative investment specialists covering hedge funds, private equity, and real assets.",
+    "link": "https://www.prometric.com/ga/exams/caia"
+  },
+  {
+    "code": "college-student",
+    "name": "College Board AP Examinations",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "Advanced Placement exams allowing high school students to earn college credit and demonstrate mastery in specific subject areas.",
+    "link": "https://www.prometric.com/ga/exams/college-student"
+  },
+  {
+    "code": "comptia-a-plus",
+    "name": "CompTIA A+",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Entry-level IT certification validating foundational skills in hardware, software, networking, and troubleshooting.",
+    "link": "https://www.prometric.com/ga/exams/comptia-a-plus"
+  },
+  {
+    "code": "comptia-cloud-plus",
+    "name": "CompTIA Cloud+",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Cloud computing certification validating skills in cloud architecture, security, deployment, and troubleshooting.",
+    "link": "https://www.prometric.com/ga/exams/comptia-cloud-plus"
+  },
+  {
+    "code": "comptia-cysa-plus",
+    "name": "CompTIA CySA+",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Cybersecurity analyst certification focusing on threat detection, security monitoring, and incident response.",
+    "link": "https://www.prometric.com/ga/exams/comptia-cysa-plus"
+  },
+  {
+    "code": "comptia-network-plus",
+    "name": "CompTIA Network+",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Certification for networking professionals covering network architecture, operations, security, and troubleshooting.",
+    "link": "https://www.prometric.com/ga/exams/comptia-network-plus"
+  },
+  {
+    "code": "comptia-pentest-plus",
+    "name": "CompTIA PenTest+",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Penetration testing certification covering planning, scoping, vulnerability assessment, and reporting.",
+    "link": "https://www.prometric.com/ga/exams/comptia-pentest-plus"
+  },
+  {
+    "code": "comptia-security-plus",
+    "name": "CompTIA Security+",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Globally recognized cybersecurity certification covering threats, vulnerabilities, cryptography, and identity management.",
+    "link": "https://www.prometric.com/ga/exams/comptia-security-plus"
+  },
+  {
+    "code": "connecticut",
+    "name": "Connecticut State Licensing Exams",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Professional licensing examinations administered for the State of Connecticut.",
+    "link": "https://www.prometric.com/ga/exams/connecticut"
+  },
+  {
+    "code": "dantes",
+    "name": "DANTES Subject Standardized Tests",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "Standardized tests enabling military personnel and civilians to earn college credits for knowledge acquired outside traditional classrooms.",
+    "link": "https://www.prometric.com/ga/exams/dantes"
+  },
+  {
+    "code": "dsst",
+    "name": "DSST Credit-by-Exam Program",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "DSST exams allow students to earn college credit by demonstrating mastery of college-level material across 30+ subject areas.",
+    "link": "https://www.prometric.com/ga/exams/dsst"
+  },
+  {
+    "code": "dbia",
+    "name": "Design-Build Institute of America (DBIA)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Professional certification in design-build project delivery for construction and engineering professionals.",
+    "link": "https://www.prometric.com/ga/exams/dbia"
+  },
+  {
+    "code": "dha",
+    "name": "Dubai Health Authority (DHA) Licensing Exam",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Professional licensing examination for healthcare practitioners seeking to practice in Dubai, covering medical knowledge and clinical competency.",
+    "link": "https://www.prometric.com/ga/exams/dha"
+  },
+  {
+    "code": "edge",
+    "name": "EDGE Certification",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Green building certification for resource-efficient buildings, covering energy, water, and materials.",
+    "link": "https://www.prometric.com/ga/exams/edge"
+  },
+  {
+    "code": "ema",
+    "name": "Emergency Management Accreditation",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Professional certification in emergency management covering preparedness, response, and recovery planning.",
+    "link": "https://www.prometric.com/ga/exams/ema"
+  },
+  {
+    "code": "eic",
+    "name": "Event Industry Council (EIC)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Certified Meeting Professional designation covering event design, logistics, and stakeholder management.",
+    "link": "https://www.prometric.com/ga/exams/eic"
+  },
+  {
+    "code": "exlrn",
+    "name": "Excelsior College (UExcel) Examinations",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "Credit-by-exam program allowing students to demonstrate college-level knowledge across multiple disciplines.",
+    "link": "https://www.prometric.com/ga/exams/exlrn"
+  },
+  {
+    "code": "fsbpt",
+    "name": "Federation of State Boards of Physical Therapy (FSBPT)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "National Physical Therapy Examination assessing competency for physical therapy practice and licensure.",
+    "link": "https://www.prometric.com/ga/exams/fsbpt"
+  },
+  {
+    "code": "fdacs",
+    "name": "Florida Department of Agriculture (FDACS)",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Licensing examinations for agricultural and consumer services professionals in Florida.",
+    "link": "https://www.prometric.com/ga/exams/fdacs"
+  },
+  {
+    "code": "fldoh",
+    "name": "Florida Department of Health Examinations",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "State health professional licensing examinations administered for the Florida Department of Health.",
+    "link": "https://www.prometric.com/ga/exams/fldoh"
+  },
+  {
+    "code": "foodsafety",
+    "name": "Food Safety Certification",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Food safety manager and handler certifications covering foodborne illness prevention and sanitation.",
+    "link": "https://www.prometric.com/ga/exams/foodsafety"
+  },
+  {
+    "code": "gbta",
+    "name": "Global Business Travel Association (GBTA)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Certification for business travel professionals covering procurement, risk management, and program optimization.",
+    "link": "https://www.prometric.com/ga/exams/gbta"
+  },
+  {
+    "code": "gre",
+    "name": "Graduate Record Examinations (GRE)",
+    "industry_category": "Education",
+    "exam_type": "Hybrid",
+    "description": "A standardized test for admissions to graduate and business schools, measuring verbal reasoning, quantitative reasoning, and analytical writing.",
+    "link": "https://www.prometric.com/ga/exams/gre"
+  },
+  {
+    "code": "gbci",
+    "name": "Green Business Certification Inc. (GBCI)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Certification exams for LEED and WELL building standards, promoting sustainable and healthy building practices worldwide.",
+    "link": "https://www.prometric.com/ga/exams/gbci"
+  },
+  {
+    "code": "h3c",
+    "name": "H3C Network Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Network engineering certifications covering H3C networking equipment, routing, switching, and security.",
+    "link": "https://www.prometric.com/ga/exams/h3c"
+  },
+  {
+    "code": "hfsa",
+    "name": "Heart Failure Society of America (HFSA)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification in heart failure management for healthcare professionals specializing in cardiovascular care.",
+    "link": "https://www.prometric.com/ga/exams/hfsa"
+  },
+  {
+    "code": "hksi",
+    "name": "Hong Kong Securities Institute (HKSI)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Securities and investment licensing examinations for financial professionals in Hong Kong.",
+    "link": "https://www.prometric.com/ga/exams/hksi"
+  },
+  {
+    "code": "hrpa",
+    "name": "Human Resources Professionals Association (HRPA)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Canadian HR professional designation covering employment law, compensation, and organizational development.",
+    "link": "https://www.prometric.com/ga/exams/hrpa"
+  },
+  {
+    "code": "see",
+    "name": "IRS Special Enrollment Examination (SEE)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "The IRS SEE exam qualifies enrolled agents to represent taxpayers before the IRS, covering individual and business tax returns.",
+    "link": "https://www.prometric.com/ga/exams/see"
+  },
+  {
+    "code": "icma",
+    "name": "Institute of Certified Management Accountants (ICMA)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Management accounting certification covering financial planning, analysis, control, and decision support.",
+    "link": "https://www.prometric.com/ga/exams/icma"
+  },
+  {
+    "code": "neta",
+    "name": "InterNational Electrical Testing Association (NETA)",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Certification for electrical testing technicians covering power systems testing, maintenance, and safety.",
+    "link": "https://www.prometric.com/ga/exams/neta"
+  },
+  {
+    "code": "iblce",
+    "name": "International Board of Lactation Consultant Examiners (IBLCE)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for lactation consultants covering breastfeeding and human lactation knowledge.",
+    "link": "https://www.prometric.com/ga/exams/iblce"
+  },
+  {
+    "code": "icrc",
+    "name": "International Commission on Rules for Cricket (ICRC)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Certification for rehabilitation counselors covering counseling, case management, and vocational services.",
+    "link": "https://www.prometric.com/ga/exams/icrc"
+  },
+  {
+    "code": "idfa",
+    "name": "International Dairy Foods Association (IDFA)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Dairy industry certifications covering food safety, quality control, and production management.",
+    "link": "https://www.prometric.com/ga/exams/idfa"
+  },
+  {
+    "code": "ifma",
+    "name": "International Facility Management Association (IFMA)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Facility management certifications covering operations, maintenance, project management, and sustainability.",
+    "link": "https://www.prometric.com/ga/exams/ifma"
+  },
+  {
+    "code": "iwbi",
+    "name": "International WELL Building Institute (IWBI)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "WELL AP certification for professionals advancing health and wellness in buildings and communities.",
+    "link": "https://www.prometric.com/ga/exams/iwbi"
+  },
+  {
+    "code": "kaleris",
+    "name": "Kaleris Transportation Technology Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Certification for transportation management technology covering logistics, terminal operations, and fleet management.",
+    "link": "https://www.prometric.com/ga/exams/kaleris"
+  },
+  {
+    "code": "kaplanap",
+    "name": "Kaplan AP Test Prep",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "Advanced Placement exam preparation and practice tests for high school students.",
+    "link": "https://www.prometric.com/ga/exams/kaplanap"
+  },
+  {
+    "code": "kcfa",
+    "name": "Korea CFA Society Examinations",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Financial analyst certification examinations administered for the Korean financial services industry.",
+    "link": "https://www.prometric.com/ga/exams/kcfa"
+  },
+  {
+    "code": "lsac",
+    "name": "Law School Admission Council (LSAT)",
+    "industry_category": "Education",
+    "exam_type": "Hybrid",
+    "description": "The LSAT measures reading comprehension, analytical reasoning, and logical reasoning skills for law school admissions.",
+    "link": "https://www.prometric.com/ga/exams/lsac"
+  },
+  {
+    "code": "lti",
+    "name": "Life Technologies Institute (LTI)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Insurance industry certifications covering life insurance, annuities, and financial product knowledge.",
+    "link": "https://www.prometric.com/ga/exams/lti"
+  },
+  {
+    "code": "maine",
+    "name": "Maine State Licensing Exams",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Professional licensing examinations administered for the State of Maine.",
+    "link": "https://www.prometric.com/ga/exams/maine"
+  },
+  {
+    "code": "mia",
+    "name": "Malaysian Institute of Accountants (MIA)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Professional accounting certification for accountants practicing in Malaysia.",
+    "link": "https://www.prometric.com/ga/exams/mia"
+  },
+  {
+    "code": "mcc",
+    "name": "Medical Council of Canada (MCC) Examinations",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Licensing examinations assessing the knowledge and clinical skills required for entry into supervised and independent medical practice in Canada.",
+    "link": "https://www.prometric.com/ga/exams/mcc"
+  },
+  {
+    "code": "mensa",
+    "name": "Mensa Admission Test",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "The Mensa admission test evaluates general intelligence to determine eligibility for membership in the high-IQ society.",
+    "link": "https://www.prometric.com/ga/exams/mensa"
+  },
+  {
+    "code": "minio",
+    "name": "MinIO Object Storage Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Certification for MinIO high-performance object storage covering deployment, operations, and integration.",
+    "link": "https://www.prometric.com/ga/exams/minio"
+  },
+  {
+    "code": "mohkw",
+    "name": "Ministry of Health Kuwait Licensing Exam",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Professional licensing examination for healthcare practitioners seeking to work in Kuwait.",
+    "link": "https://www.prometric.com/ga/exams/mohkw"
+  },
+  {
+    "code": "nfpacert",
+    "name": "NFPA Certified Fire Inspector",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Professional certification for fire inspectors covering code enforcement, fire prevention, and building safety.",
+    "link": "https://www.prometric.com/ga/exams/nfpacert"
+  },
+  {
+    "code": "dcas",
+    "name": "NYC Department of Citywide Administrative Services (DCAS)",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Civil service examinations for New York City government positions.",
+    "link": "https://www.prometric.com/ga/exams/dcas"
+  },
+  {
+    "code": "nala",
+    "name": "National Association of Legal Assistants (NALA)",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Certified Paralegal examination covering legal research, writing, ethics, and substantive law areas.",
+    "link": "https://www.prometric.com/ga/exams/nala"
+  },
+  {
+    "code": "nbcot-0",
+    "name": "National Board for Certification in Occupational Therapy (NBCOT)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification exam for occupational therapists and occupational therapy assistants.",
+    "link": "https://www.prometric.com/ga/exams/nbcot-0"
+  },
+  {
+    "code": "nbbi",
+    "name": "National Board of Boiler and Pressure Vessel Inspectors (NBBI)",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Professional certification for boiler and pressure vessel inspectors covering safety codes and standards.",
+    "link": "https://www.prometric.com/ga/exams/nbbi"
+  },
+  {
+    "code": "nbce",
+    "name": "National Board of Chiropractic Examiners (NBCE)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Licensing examination for chiropractors covering basic science, clinical science, and diagnostic imaging.",
+    "link": "https://www.prometric.com/ga/exams/nbce"
+  },
+  {
+    "code": "nbmes",
+    "name": "National Board of Medical Examiners (NBME) Subject Exams",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Subject-specific medical examinations used by medical schools for student assessment and progress evaluation.",
+    "link": "https://www.prometric.com/ga/exams/nbmes"
+  },
+  {
+    "code": "ncidq",
+    "name": "National Council for Interior Design Qualification (NCIDQ)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Interior design certification exam covering building systems, codes, construction standards, and design application.",
+    "link": "https://www.prometric.com/ga/exams/ncidq"
+  },
+  {
+    "code": "ndeb",
+    "name": "National Dental Examining Board of Canada (NDEB)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "National dental certification examination for dental practitioners in Canada.",
+    "link": "https://www.prometric.com/ga/exams/ndeb"
+  },
+  {
+    "code": "nebb",
+    "name": "National Environmental Balancing Bureau (NEBB)",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Certification for building systems commissioning, testing, and balancing professionals.",
+    "link": "https://www.prometric.com/ga/exams/nebb"
+  },
+  {
+    "code": "nfpa",
+    "name": "National Fire Protection Association (NFPA)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Fire protection and safety certifications covering fire inspection, investigation, and prevention.",
+    "link": "https://www.prometric.com/ga/exams/nfpa"
+  },
+  {
+    "code": "nhra",
+    "name": "National Health Regulatory Authority Bahrain",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Medical licensing examination for healthcare practitioners seeking to practice in Bahrain.",
+    "link": "https://www.prometric.com/ga/exams/nhra"
+  },
+  {
+    "code": "nha",
+    "name": "National Healthcareer Association (NHA)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Allied health certifications covering medical assistants, phlebotomy technicians, and patient care technicians.",
+    "link": "https://www.prometric.com/ga/exams/nha"
+  },
+  {
+    "code": "nicde",
+    "name": "National Institute for Certification in Engineering Technologies (NICET)",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Engineering technician certifications covering fire protection, transportation, and construction materials testing.",
+    "link": "https://www.prometric.com/ga/exams/nicde"
+  },
+  {
+    "code": "nmls",
+    "name": "Nationwide Multistate Licensing System (NMLS)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Licensing exam for mortgage loan originators covering federal and state mortgage lending regulations.",
+    "link": "https://www.prometric.com/ga/exams/nmls"
+  },
+  {
+    "code": "nvbar",
+    "name": "Nevada State Bar Examination",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Bar examination for attorney licensure in the state of Nevada.",
+    "link": "https://www.prometric.com/ga/exams/nvbar"
+  },
+  {
+    "code": "nevada",
+    "name": "Nevada State Licensing Exams",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Professional licensing examinations for regulated occupations in the state of Nevada.",
+    "link": "https://www.prometric.com/ga/exams/nevada"
+  },
+  {
+    "code": "nisource",
+    "name": "NiSource Technical Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Technical certification for energy utility professionals covering safety, operations, and compliance standards.",
+    "link": "https://www.prometric.com/ga/exams/nisource"
+  },
+  {
+    "code": "narm",
+    "name": "North American Registry of Midwives (NARM)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for Certified Professional Midwives covering prenatal, labor, birth, and postpartum care.",
+    "link": "https://www.prometric.com/ga/exams/narm"
+  },
+  {
+    "code": "nasaa",
+    "name": "North American Securities Administrators Association (NASAA)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Securities licensing examinations for investment professionals, including Series 63, 65, and 66.",
+    "link": "https://www.prometric.com/ga/exams/nasaa"
+  },
+  {
+    "code": "nmtcb",
+    "name": "Nuclear Medicine Technology Certification Board (NMTCB)",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Certification for nuclear medicine technologists covering radiation safety, instrumentation, and clinical procedures.",
+    "link": "https://www.prometric.com/ga/exams/nmtcb"
+  },
+  {
+    "code": "nurseaide",
+    "name": "Nurse Aide Competency Evaluation",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "State-administered competency evaluation for certified nurse aides covering patient care skills and knowledge.",
+    "link": "https://www.prometric.com/ga/exams/nurseaide"
+  },
+  {
+    "code": "oet",
+    "name": "Occupational English Test (OET)",
+    "industry_category": "Healthcare",
+    "exam_type": "Hybrid",
+    "description": "English language test designed specifically for healthcare professionals seeking to register and practice abroad.",
+    "link": "https://www.prometric.com/ga/exams/oet"
+  },
+  {
+    "code": "oceanbase",
+    "name": "OceanBase Database Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Database certification for OceanBase distributed database system covering administration and development.",
+    "link": "https://www.prometric.com/ga/exams/oceanbase"
+  },
+  {
+    "code": "omsb",
+    "name": "Oman Medical Specialty Board (OMSB)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Medical licensing examination for healthcare professionals seeking to practice in the Sultanate of Oman.",
+    "link": "https://www.prometric.com/ga/exams/omsb"
+  },
+  {
+    "code": "oat",
+    "name": "Optometry Admission Test (OAT)",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "Standardized examination for optometry school admissions measuring academic ability and scientific comprehension.",
+    "link": "https://www.prometric.com/ga/exams/oat"
+  },
+  {
+    "code": "outsystems",
+    "name": "OutSystems Developer Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Low-code development platform certification for OutSystems application developers and architects.",
+    "link": "https://www.prometric.com/ga/exams/outsystems"
+  },
+  {
+    "code": "parapro",
+    "name": "ParaPro Assessment",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "Assessment for paraprofessional educators measuring reading, mathematics, and writing skills.",
+    "link": "https://www.prometric.com/ga/exams/parapro"
+  },
+  {
+    "code": "pncb",
+    "name": "Pediatric Nursing Certification Board (PNCB)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for pediatric nurses and nurse practitioners in primary and acute care settings.",
+    "link": "https://www.prometric.com/ga/exams/pncb"
+  },
+  {
+    "code": "pennsylvania",
+    "name": "Pennsylvania State Licensing Exams",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Professional licensing examinations for regulated occupations in Pennsylvania.",
+    "link": "https://www.prometric.com/ga/exams/pennsylvania"
+  },
+  {
+    "code": "pebc",
+    "name": "Pharmacy Examining Board of Canada (PEBC)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Licensing exams for pharmacists and pharmacy technicians seeking to practice in Canada.",
+    "link": "https://www.prometric.com/ga/exams/pebc"
+  },
+  {
+    "code": "praxis",
+    "name": "Praxis Teacher Certification Exams",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "Standardized tests used for teacher licensing and certification across 40+ U.S. states and territories.",
+    "link": "https://www.prometric.com/ga/exams/praxis"
+  },
+  {
+    "code": "pdma",
+    "name": "Product Development and Management Association (PDMA)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "New Product Development Professional certification covering innovation strategy, portfolio management, and product lifecycle.",
+    "link": "https://www.prometric.com/ga/exams/pdma"
+  },
+  {
+    "code": "plus",
+    "name": "Professional Liability Underwriting Society (PLUS)",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Professional liability and specialty insurance certification covering risk assessment and underwriting.",
+    "link": "https://www.prometric.com/ga/exams/plus"
+  },
+  {
+    "code": "qwa",
+    "name": "Qatar Prometric Healthcare Exam",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Professional licensing examination for healthcare practitioners seeking to practice in Qatar.",
+    "link": "https://www.prometric.com/ga/exams/qwa"
+  },
+  {
+    "code": "rel",
+    "name": "Real Estate Licensing Examinations",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "State real estate licensing exams for salesperson and broker candidates covering property law and practice.",
+    "link": "https://www.prometric.com/ga/exams/rel"
+  },
+  {
+    "code": "swift",
+    "name": "SWIFT Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Professional certification for SWIFT financial messaging network covering standards, security, and operations.",
+    "link": "https://www.prometric.com/ga/exams/swift"
+  },
+  {
+    "code": "schq2",
+    "name": "Saudi Commission for Health Specialties (SCHS)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Licensing and classification examinations for healthcare professionals in Saudi Arabia.",
+    "link": "https://www.prometric.com/ga/exams/schq2"
+  },
+  {
+    "code": "sha",
+    "name": "Saudi Health Authority Examinations",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Healthcare professional licensing examinations for practitioners seeking to work in Saudi Arabia.",
+    "link": "https://www.prometric.com/ga/exams/sha"
+  },
+  {
+    "code": "selt",
+    "name": "Secure English Language Tests (SELT)",
+    "industry_category": "Education",
+    "exam_type": "In-Center",
+    "description": "Approved English language tests for UK visa and immigration applications.",
+    "link": "https://www.prometric.com/ga/exams/selt"
+  },
+  {
+    "code": "shrm",
+    "name": "Society for Human Resource Management (SHRM)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "SHRM certification exams assess competency in human resource management, covering leadership, business, and interpersonal skills.",
+    "link": "https://www.prometric.com/ga/exams/shrm"
+  },
+  {
+    "code": "smps",
+    "name": "Society for Marketing Professional Services (SMPS)",
+    "industry_category": "Other",
+    "exam_type": "In-Center",
+    "description": "Certification for marketing and business development professionals in the architecture/engineering/construction industry.",
+    "link": "https://www.prometric.com/ga/exams/smps"
+  },
+  {
+    "code": "soa",
+    "name": "Society of Actuaries (SOA) Examinations",
+    "industry_category": "Financial",
+    "exam_type": "In-Center",
+    "description": "Actuarial science examinations covering probability, financial mathematics, actuarial models, and enterprise risk management.",
+    "link": "https://www.prometric.com/ga/exams/soa"
+  },
+  {
+    "code": "socra",
+    "name": "Society of Clinical Research Associates (SoCRA)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Certification for clinical research professionals covering regulatory requirements, GCP, and trial management.",
+    "link": "https://www.prometric.com/ga/exams/socra"
+  },
+  {
+    "code": "insurance",
+    "name": "State Insurance Licensing Examinations",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "State-administered insurance licensing exams covering property, casualty, life, health, and specialty lines.",
+    "link": "https://www.prometric.com/ga/exams/insurance"
+  },
+  {
+    "code": "tssa",
+    "name": "Technical Standards and Safety Authority (TSSA)",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Safety certification for operators of boilers, pressure vessels, elevators, and fuel systems in Ontario.",
+    "link": "https://www.prometric.com/ga/exams/tssa"
+  },
+  {
+    "code": "tencent",
+    "name": "Tencent Cloud Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "Cloud computing certifications for Tencent Cloud services covering architecture and cloud solutions.",
+    "link": "https://www.prometric.com/ga/exams/tencent"
+  },
+  {
+    "code": "toefl",
+    "name": "Test of English as a Foreign Language (TOEFL)",
+    "industry_category": "Education",
+    "exam_type": "Hybrid",
+    "description": "Internationally recognized English language proficiency test for non-native speakers applying to English-speaking universities.",
+    "link": "https://www.prometric.com/ga/exams/toefl"
+  },
+  {
+    "code": "usmle",
+    "name": "United States Medical Licensing Examination (USMLE)",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "A three-step examination for medical licensure in the United States, assessing a physician's ability to apply knowledge and skills in patient care.",
+    "link": "https://www.prometric.com/ga/exams/usmle"
+  },
+  {
+    "code": "uspto",
+    "name": "United States Patent and Trademark Office (USPTO)",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Patent bar examination for registration as a patent attorney or agent before the USPTO.",
+    "link": "https://www.prometric.com/ga/exams/uspto"
+  },
+  {
+    "code": "uppcc",
+    "name": "Universal Public Procurement Certification Council (UPPCC)",
+    "industry_category": "Government",
+    "exam_type": "In-Center",
+    "description": "Professional certification for public procurement officials covering sourcing, contracting, and supply management.",
+    "link": "https://www.prometric.com/ga/exams/uppcc"
+  },
+  {
+    "code": "unqork",
+    "name": "Unqork Certification",
+    "industry_category": "Technology",
+    "exam_type": "In-Center",
+    "description": "No-code enterprise platform certification for developers building applications on the Unqork platform.",
+    "link": "https://www.prometric.com/ga/exams/unqork"
+  },
+  {
+    "code": "wadoh",
+    "name": "Washington Department of Health",
+    "industry_category": "Healthcare",
+    "exam_type": "In-Center",
+    "description": "Professional licensing examinations for healthcare providers in Washington State.",
+    "link": "https://www.prometric.com/ga/exams/wadoh"
+  }
+]

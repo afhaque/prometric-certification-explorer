@@ -9,8 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        navy: "#071C35",
+        mint: "#16DFA5",
+        "off-white": "#FDFDFF",
+      },
+      fontFamily: {
+        heading: ["var(--font-ibm-plex-sans)", "sans-serif"],
+        body: ["var(--font-inter)", "sans-serif"],
+      },
+      borderRadius: {
+        pill: "32px",
       },
     },
   },
