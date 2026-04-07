@@ -9903,3 +9903,256 @@ Clean. The main exam grid now animates the same way as the featured carousel:
 - **Previous** → slides in from the left
 - **Filter or search change** → resets to page 1 with a slide-right entrance
 - Same `cubic-bezier` easing and 280ms duration as the featured section for consistency
+
+---
+
+_**User (2026-04-07 09:56:15Z)**_
+
+in the case of copilot what are prompts like here what is the argument? ---
+name: create-instructions
+description: 'Create an instructions file (.instructions.md) for a project rule or convention.'
+argument-hint: What rule or convention to enforce?
+agent: agent
+---
+Related skill: `agent-customization`. Load and follow **instructions.md** for template and principles.
+
+Guide the user to create an instructions file.
+
+## Extract from Conversation
+First, review the conversation history. If the user has been correcting the agent's output or asking for specific patterns (e.g., "always use X", "never do Y", "follow this style"), generalize that into a persistent instruction. Extract:
+- Corrections or preferences mentioned during the conversation
+- Coding patterns the user enforced or requested
+- Project-specific conventions referenced
+
+## Clarify if Needed
+If no clear rule emerges from the conversation, clarify:
+- Should this apply everywhere or only to specific files?
+- Which technologies or file types are affected?
+- Is this a hard rule or a preference?
+
+Explore the codebase using subagents if you need more context.
+
+## Iterate
+1. Draft the instruction and save it.
+2. Identify the most ambiguous or weak parts and ask about those.
+3. Once finalized, summarize what the instruction enforces, suggest example prompts to see it in action, and propose related customizations to create next.
+
+Remember to follow the `agent-customization` guidelines to create highly effective instructions.
+
+
+---
+
+_**Agent (claude-sonnet-4-6 2026-04-07 09:56:37Z)**_
+
+_**Agent (claude-sonnet-4-6 2026-04-07 09:56:44Z)**_
+
+════ PAI | NATIVE MODE ═══════════════════════
+🗒️ TASK: Explain Copilot prompt file argument usage
+
+This is a **VS Code Copilot Chat prompt file** (`.prompt.md`). The `argument-hint` field is displayed as a placeholder when the user invokes it.
+
+**How it's invoked in Copilot Chat:**
+```
+/create-instructions <your argument here>
+```
+
+The argument is free-form text the user types after the slash command. Given `argument-hint: What rule or convention to enforce?`, examples would be:
+
+```
+/create-instructions Always use named exports, never default exports
+/create-instructions React components must be functional with explicit return types
+/create-instructions All API calls go through src/lib/api.ts, never fetch directly
+/create-instructions Use Tailwind utility classes only, no custom CSS files
+```
+
+That argument text gets injected into the prompt body (available as `$input` or similar depending on the runner) and the prompt uses it to guide the agent toward creating the right `.instructions.md` file.
+
+**In short:** the argument is the one-liner describing the rule — the prompt then does the work of turning that into a well-structured persistent instructions file with the right scope, file patterns, and wording.
+
+🗣️ Brock: Argument is the rule description; prompt scaffolds it into a proper instructions file.
+
+---
+
+_**User (2026-04-07 09:57:16Z)**_
+
+is a prompt a kind of common command?
+
+---
+
+_**Agent (claude-sonnet-4-6 2026-04-07 09:57:22Z)**_
+
+_**Agent (claude-sonnet-4-6 2026-04-07 09:57:28Z)**_
+
+════ PAI | NATIVE MODE ═══════════════════════
+🗒️ TASK: Clarify prompt vs command concept in Copilot
+
+Yes — in Copilot's model, a **prompt file is essentially a reusable slash command** you define yourself.
+
+The built-in ones (`/fix`, `/explain`, `/tests`) are Copilot's native commands. A `.prompt.md` file lets you create your own at the same level — once saved, `/create-instructions` shows up in the chat command palette just like any built-in.
+
+The difference from a plain command:
+
+| | Built-in command | Prompt file |
+|---|---|---|
+| Defined by | Copilot/Microsoft | You, in your repo or user profile |
+| Stored | Internally | `.github/prompts/*.prompt.md` |
+| Has system instructions | Yes | Yes (the file body) |
+| Takes an argument | Some | Yes, via `argument-hint` |
+| Scoped to project | No | Can be |
+
+So "prompt file" is just Copilot's name for a **user-defined slash command with a system prompt baked in**. The `argument-hint` is what makes it feel like a command rather than a static template — it accepts input at call time.
+
+Claude Code's equivalent is the **Skill** system (`/commit`, `/simplify`, etc.) — same concept, different implementation.
+
+🗣️ Brock: Prompt file = user-defined slash command; argument makes it dynamic at call time.
+
+---
+
+_**User (2026-04-07 09:57:30Z)**_
+
+is it for tol calling?
+
+---
+
+_**Agent (claude-sonnet-4-6 2026-04-07 09:57:56Z)**_
+
+_**Agent (claude-sonnet-4-6 2026-04-07 09:58:01Z)**_
+
+════ PAI | NATIVE MODE ═══════════════════════
+🗒️ TASK: Clarify whether prompt files are for tool calling
+
+No — prompt files are **not** for tool calling. They're for packaging reusable instructions.
+
+The `agent: agent` in the frontmatter is the only connection to tools — it means the prompt runs in **agent mode**, which gives Copilot access to tools (read files, edit code, run terminal). If it said `agent: chat`, it'd be purely conversational with no tool access.
+
+But the prompt file itself doesn't define or declare tools. It just determines:
+- What instructions the agent gets upfront
+- What mode it runs in (chat vs agent)
+- What argument the user provides
+
+**Tool calling** in Copilot is handled by the runtime — Copilot decides when to call tools based on context. The prompt file just sets the stage.
+
+The mental model:
+
+```
+prompt file = instructions + mode
+agent mode  = instructions + mode + tool access
+tool call   = something the agent decides to do during execution
+```
+
+So a prompt with `agent: agent` *enables* tool use, but the prompt file isn't *how* you define or invoke specific tools.
+
+🗣️ Brock: Prompt files are reusable instructions; agent mode enables tools, but prompts don't define them.
+
+---
+
+_**User (2026-04-07 10:18:15Z)**_
+
+how does copilot decide when to look at mcps vs skills in deciding what to do?
+
+---
+
+_**Agent (claude-sonnet-4-6 2026-04-07 10:18:31Z)**_
+
+_**Agent (claude-sonnet-4-6 2026-04-07 10:18:38Z)**_
+
+════ PAI | NATIVE MODE ═══════════════════════
+🗒️ TASK: Explain Copilot's MCP vs skills decision hierarchy
+
+They don't really compete — they operate at **different layers** and Copilot uses both simultaneously:
+
+**Skills / prompt files / instructions** — shape *how the agent behaves*
+- `.instructions.md` files are always injected into context (passive, always-on)
+- `.prompt.md` files are triggered *explicitly* by the user via slash command
+- The model doesn't decide to "use" these — they're either always present or user-invoked
+
+**MCPs** — shape *what the agent can do*
+- Exposed as a list of callable tools with names + descriptions
+- The model reads those descriptions and decides to call them when it judges they'd help complete the current task
+- This is the model's own reasoning — no explicit user invocation needed
+
+So the decision flow looks like:
+
+```
+User sends a message
+        ↓
+Always-on .instructions.md injected into context → shapes behavior
+        ↓
+If user typed /slash-command → prompt file runs first
+        ↓
+Agent executes → looks at available MCP tools by name/description
+        ↓
+Model decides which tools to call based on what the task needs
+```
+
+**The practical answer:** Copilot picks MCP tools the same way it picks any tool — semantic matching between the task and the tool's description. A well-named MCP tool with a clear description gets called when the task matches. Skills/instructions never compete with that; they're already in the room shaping everything before tool selection happens.
+
+🗣️ Brock: Instructions shape behavior passively; MCPs are tools the model picks on its own reasoning.
+
+---
+
+_**User (2026-04-07 10:23:28Z)**_
+
+so skills are an equivalent to instructions?
+
+---
+
+_**Agent (claude-sonnet-4-6 2026-04-07 10:23:35Z)**_
+
+_**Agent (claude-sonnet-4-6 2026-04-07 10:23:39Z)**_
+
+════ PAI | NATIVE MODE ═══════════════════════
+🗒️ TASK: Clarify skills vs instructions equivalence
+
+Not quite — skills map to **prompt files**, not instructions. They're different things:
+
+| Claude Code | Copilot | What it does |
+|---|---|---|
+| `CLAUDE.md` | `.instructions.md` | Always-on rules, injected automatically |
+| Skills (`/commit`, `/simplify`) | `.prompt.md` files | User-invoked slash commands |
+
+**Instructions** = passive, always present, shape every interaction silently
+
+**Skills / prompt files** = active, only run when called, package a specific workflow
+
+The key difference is invocation — instructions are never "called," they're just always in context. Skills require the user (or agent) to explicitly invoke them.
+
+So if you wanted to replicate a Claude Code skill in Copilot, you'd write a `.prompt.md`. If you wanted to replicate `CLAUDE.md`, you'd write a `.instructions.md`.
+
+🗣️ Brock: Skills = prompt files (invoked); instructions = CLAUDE.md equivalents (always-on).
+
+---
+
+_**User (2026-04-07 10:24:09Z)**_
+
+what is the difference between skills and prompts. is it that skills can be invoked by agents?
+
+---
+
+_**Agent (claude-sonnet-4-6 2026-04-07 10:24:23Z)**_
+
+_**Agent (claude-sonnet-4-6 2026-04-07 10:24:30Z)**_
+
+════ PAI | NATIVE MODE ═══════════════════════
+🗒️ TASK: Distinguish skills from prompts conceptually
+
+Yes, that's the core of it — but there's a bit more nuance:
+
+**Prompts (Copilot `.prompt.md`)** — user-invoked only. A human types `/create-instructions` and it runs. The agent can't decide on its own to fire it.
+
+**Skills (Claude Code)** — invokable by both. A user can type `/commit`, but the agent itself can also call `Skill("commit")` mid-task when it judges it's appropriate. That's what makes them meaningfully different.
+
+The second distinction is **composability** — because agents can call skills, skills can call other skills. A complex workflow can delegate sub-tasks to specialized skills programmatically, building a pipeline. Prompt files are more standalone.
+
+So the full picture:
+
+| | Prompt file | Skill |
+|---|---|---|
+| User can invoke | ✓ | ✓ |
+| Agent can invoke | ✗ | ✓ |
+| Composable / chainable | Limited | Yes |
+| Carries its own routing logic | Sometimes | Yes (SKILL.md + sub-workflows) |
+
+The agent-invocability is what elevates a skill from "a saved prompt" to "a callable capability" — it becomes part of the agent's own decision-making toolkit, not just a user convenience.
+
+🗣️ Brock: Key difference is agent-invocability; skills are callable capabilities, prompts are user shortcuts.
