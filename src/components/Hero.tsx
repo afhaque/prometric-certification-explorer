@@ -13,7 +13,7 @@ export default function Hero({
     <section className="bg-navy text-white py-16 md:py-24">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h1 className="font-heading font-bold text-3xl md:text-5xl mb-4 leading-tight">
-          Explore 100+ Certification Programs
+          Explore 433 Certification Programs
         </h1>
         <p className="font-body text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
           Browse Prometric&apos;s global portfolio of certification and exam

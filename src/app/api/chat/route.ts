@@ -1,9 +1,5 @@
-import { openai } from "@ai-sdk/openai";
-import { streamText } from "ai";
+import OpenAI from "openai";
 import examsData from "../../../../data/exams.json";
-
-// Allow streaming responses up to 30 seconds
-export const maxDuration = 30;
 
 const examList = examsData
   .map(
@@ -28,16 +24,22 @@ Guidelines:
 - If the user asks something unrelated to certifications, gently redirect them
 - Be warm, encouraging, and professional
 - DO NOT recommend certifications that are not in the provided list.
-- DO NOT talk about any subject not related to certifications `;
+- DO NOT talk about any subject not related to certifications`;
 
 export async function POST(req: Request) {
   const { messages } = await req.json();
 
-  const result = streamText({
-    model: openai("gpt-4o"),
-    system: SYSTEM_PROMPT,
-    messages,
+  const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+  const completion = await client.chat.completions.create({
+    model: "gpt-4o",
+    messages: [
+      { role: "system", content: SYSTEM_PROMPT },
+      ...messages,
+    ],
   });
 
-  return result.toDataStreamResponse();
+  const reply = completion.choices[0].message.content;
+
+  return Response.json({ reply });
 }

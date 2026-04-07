@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import FilterSidebar from "@/components/FilterSidebar";
 import ExamCard from "@/components/ExamCard";
 import FeaturedCertifications from "@/components/FeaturedCertifications";
+import DataStatsPanel from "@/components/DataStatsPanel";
 import StatsBanner from "@/components/StatsBanner";
 import Footer from "@/components/Footer";
 import ChatBox from "@/components/ChatBox";
@@ -24,13 +25,21 @@ export default function Home() {
   );
   const [sortAlpha, setSortAlpha] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [pageDirection, setPageDirection] = useState<"next" | "prev">("next");
+  const [gridKey, setGridKey] = useState(0);
   const ITEMS_PER_PAGE = 12;
+
+  const goToPage = (next: number) => {
+    setPageDirection(next > currentPage ? "next" : "prev");
+    setGridKey(k => k + 1);
+    setCurrentPage(next);
+  };
 
   // Pick 3 random exams once on mount; must be client-only to avoid hydration mismatch
   const [featuredExams, setFeaturedExams] = useState<Exam[]>([]);
   useEffect(() => {
     const shuffled = [...exams].sort(() => Math.random() - 0.5);
-    setFeaturedExams(shuffled.slice(0, 3));
+    setFeaturedExams(shuffled.slice(0, 9));
   }, []);
 
   const filteredExams = useMemo(() => {
@@ -65,6 +74,8 @@ export default function Home() {
 
   // Reset to page 1 whenever filters or search change
   useEffect(() => {
+    setPageDirection("next");
+    setGridKey(k => k + 1);
     setCurrentPage(1);
   }, [filteredExams]);
 
@@ -109,6 +120,12 @@ export default function Home() {
 
       <main id="programs" className="flex-1">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+          <DataStatsPanel
+            exams={filteredExams}
+            totalExams={exams.length}
+            selectedIndustries={selectedIndustries}
+            onIndustryToggle={handleIndustryToggle}
+          />
           <FeaturedCertifications exams={featuredExams} />
 
           <div className="flex flex-col lg:flex-row gap-8">
@@ -134,17 +151,22 @@ export default function Home() {
                 </div>
               ) : (
                 <>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-                  {paginatedExams.map((exam) => (
-                    <ExamCard key={exam.code} exam={exam} />
-                  ))}
+                <div className="overflow-hidden">
+                  <div
+                    key={gridKey}
+                    className={`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 ${pageDirection === "next" ? "anim-slide-next" : "anim-slide-prev"}`}
+                  >
+                    {paginatedExams.map((exam) => (
+                      <ExamCard key={exam.code} exam={exam} />
+                    ))}
+                  </div>
                 </div>
 
                 {/* Pagination controls */}
                 {totalPages > 1 && (
                   <div className="flex items-center justify-center gap-2 mt-8">
                     <button
-                      onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                      onClick={() => goToPage(Math.max(1, currentPage - 1))}
                       disabled={currentPage === 1}
                       className="px-3 py-2 text-sm font-body rounded-md border border-gray-200 text-navy disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
                     >
@@ -173,7 +195,7 @@ export default function Home() {
                         ) : (
                           <button
                             key={item}
-                            onClick={() => setCurrentPage(item as number)}
+                            onClick={() => goToPage(item as number)}
                             className={`w-9 h-9 text-sm font-body rounded-md border transition-colors ${
                               currentPage === item
                                 ? "bg-mint text-white border-mint"
@@ -186,14 +208,28 @@ export default function Home() {
                       )}
 
                     <button
-                      onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                      onClick={() => goToPage(Math.min(totalPages, currentPage + 1))}
                       disabled={currentPage === totalPages}
                       className="px-3 py-2 text-sm font-body rounded-md border border-gray-200 text-navy disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors"
                     >
                       Next
                     </button>
                   </div>
-                )}                </>              )}
+                )}
+
+                <style>{`
+                  @keyframes slideNextIn {
+                    from { opacity: 0; transform: translateX(40px); }
+                    to   { opacity: 1; transform: translateX(0); }
+                  }
+                  @keyframes slidePrevIn {
+                    from { opacity: 0; transform: translateX(-40px); }
+                    to   { opacity: 1; transform: translateX(0); }
+                  }
+                  .anim-slide-next { animation: slideNextIn 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+                  .anim-slide-prev { animation: slidePrevIn 0.28s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+                `}</style>
+                </>              )}
             </div>
           </div>
         </div>

@@ -1,0 +1,13 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Azure Functions API for prometric-certification-explorer",
+  "main": "src/functions/chat.js",
+  "scripts": {
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.6.0",
+    "openai": "^4.98.0"
+  }
+}

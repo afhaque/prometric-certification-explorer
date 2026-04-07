@@ -1,25 +1,51 @@
 "use client";
 
-import { useChat, type Message } from "ai/react";
 import { useEffect, useRef, useState } from "react";
+
+type Message = { id: string; role: "user" | "assistant"; content: string };
 
 export default function ChatBox() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasGreeted, setHasGreeted] = useState(false);
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const { messages, input, handleInputChange, handleSubmit, isLoading, append } =
-    useChat({ api: "/api/chat" });
+  const sendMessage = async (content: string) => {
+    const userMsg: Message = { id: Date.now().toString(), role: "user", content };
+    const updatedMessages = [...messages, userMsg];
+    setMessages(updatedMessages);
+    setInput("");
+    setIsLoading(true);
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          messages: updatedMessages.map((m) => ({ role: m.role, content: m.content })),
+        }),
+      });
+      const data = await res.json();
+      setMessages((prev) => [
+        ...prev,
+        { id: (Date.now() + 1).toString(), role: "assistant", content: data.reply },
+      ]);
+    } catch {
+      setMessages((prev) => [
+        ...prev,
+        { id: (Date.now() + 1).toString(), role: "assistant", content: "Sorry, I couldn't connect. Please try again." },
+      ]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   // Send greeting once when the panel is first opened
   useEffect(() => {
     if (isOpen && !hasGreeted) {
       setHasGreeted(true);
-      append({
-        role: "user",
-        content:
-          "__greeting__",
-      });
+      sendMessage("__greeting__");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
@@ -32,7 +58,7 @@ export default function ChatBox() {
   }, [messages, isOpen]);
 
   // Filter out the hidden greeting trigger message
-  const visibleMessages = messages.filter((m: Message) => m.content !== "__greeting__");
+  const visibleMessages = messages.filter((m) => m.content !== "__greeting__");
 
   return (
     <>
@@ -111,12 +137,12 @@ export default function ChatBox() {
 
           {/* Input */}
           <form
-            onSubmit={handleSubmit}
+            onSubmit={(e) => { e.preventDefault(); if (input.trim() && !isLoading) sendMessage(input); }}
             className="flex items-center gap-2 px-3 py-3 border-t border-gray-200 bg-white"
           >
             <input
               value={input}
-              onChange={handleInputChange}
+              onChange={(e) => setInput(e.target.value)}
               placeholder="Tell me about your career goals…"
               disabled={isLoading}
               className="flex-1 text-sm font-body bg-gray-50 border border-gray-200 rounded-full px-4 py-2 outline-none focus:ring-2 focus:ring-mint focus:border-transparent placeholder-gray-400 text-navy disabled:opacity-60"
